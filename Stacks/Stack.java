@@ -10,7 +10,7 @@ public class Stack {
     }
 
     public void push(int element) {
-        this.top = top + 1;
+        this.top = top++;
         this.values[top] = element;
     }
 
