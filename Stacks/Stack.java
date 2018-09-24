@@ -10,7 +10,7 @@ public class Stack {
     }
 
     public void push(int element) {
-        this.top = top++;
+        this.top++;
         this.values[top] = element;
     }
 
@@ -19,12 +19,12 @@ public class Stack {
     }
 
     public boolean isFull() {
-        return (top == 9);
+        return (top == values.length);
     }
 
     public int pop() {
-        int elem = values[top];
+        int element = values[top];
         top--;
-        return elem;
+        return element;
     }   
 }
